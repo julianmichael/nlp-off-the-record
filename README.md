@@ -18,14 +18,7 @@ Currently contains sample materials from the starter template:
 - Site wide search.
 
 Needs to be [configured](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
-
-To do:
-
-- Customize theme a bit and make "our own."
-- Sidebar with table of contents / navigation links.
-- Support for footnotes?
-- Disqus comments
-- About page
+See issues for other stuff that needs to be done.
 
 ---
 
