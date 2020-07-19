@@ -5,7 +5,7 @@ An NLP community blog.
 Built with Jekyll off of the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme
 and its [starter template](https://github.com/mmistakes/mm-github-pages-starter).
 
-Currently contains:
+Currently contains sample materials from the starter template:
 
 - Sample posts.
 - Sample top navigation.
@@ -18,6 +18,14 @@ Currently contains:
 - Site wide search.
 
 Needs to be [configured](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+
+To do:
+
+- Customize theme a bit and make "our own."
+- Sidebar with table of contents / navigation links.
+- Support for footnotes?
+- Disqus comments
+- About page
 
 ---
 
