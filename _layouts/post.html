@@ -48,7 +48,9 @@ layout: default
     </header>
 
     <div class="post-content e-content" itemprop="articleBody">
-        {% include toc.html html=content %}
+        {%- if page.toc -%}
+            {% include toc.html html=content %}
+        {%- endif -%}
         {{ content }}
     </div>
 
