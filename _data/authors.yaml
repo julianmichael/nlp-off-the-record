@@ -1,0 +1,4 @@
+- name: example
+  url: example.com
+  email: example@example.com
+  twitter: example
