@@ -34,6 +34,7 @@ plugins:
 
 disqus:
   shortname: nlpofftherecord
+google_analytics: UA-37075806-2
 
 # Exclude from processing.
 # The following items will not be processed, by default.
