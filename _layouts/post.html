@@ -1,43 +1,59 @@
 ---
 layout: default
 ---
+<script type="text/javascript">
+    function renderKatex() {
+        [].forEach.call(document.querySelectorAll("script[type='math/tex']"), function (i) {
+            i.outerHTML = katex.renderToString(i.innerText, {displayMode: false})
+        });
+
+        [].forEach.call(document.querySelectorAll("script[type='math/tex; mode=display']"), function (i) {
+            i.outerHTML = katex.renderToString(i.innerText.replace(/%.*/g, ""), {displayMode: true})
+        });
+    }
+</script>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" rel="stylesheet">
+<script crossorigin="anonymous" defer integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" onload="renderKatex()" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"></script>
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.modified_date -%}
-        ~ 
-        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
-        </time>
-      {%- endif -%}
-      {%- if page.author -%}
-        • {% for author in page.author %}
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            {% for stored_author in site.data.authors %}
-                {%- if author == stored_author.name -%}
-                    <span class="p-author h-card" itemprop="name">
-                        <a target="_blank" href="//{{stored_author.url}}">{{ stored_author.name }}</a></span></span>
-                {%- endif -%}
-            {% endfor %}
-            {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-      {%- endif -%}</p>
-  </header>
+    <header class="post-header">
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="post-meta">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {{ page.date | date: date_format }}
+            </time>
+            {%- if page.modified_date -%}
+                ~
+                {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+                <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+                    {{ mdate | date: date_format }}
+                </time>
+            {%- endif -%}
+            {%- if page.author -%}
+                •
+                {% for author in page.author %}
+                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        {% for stored_author in site.data.authors %}
+                            {%- if author == stored_author.name -%}
+                                <span class="p-author h-card" itemprop="name">
+                                    <a href="//{{stored_author.url}}" target="_blank">{{ stored_author.name }}</a></span></span>
+                        {%- endif -%}
+                    {% endfor %}
+                    {%- if forloop.last == false %},
+                    {% endif -%}
+                {% endfor %}
+            {%- endif -%}
+        </p>
+    </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+    <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
+    </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+    {%- if site.disqus.shortname -%}
+        {%- include disqus_comments.html -%}
+    {%- endif -%}
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
