@@ -22,6 +22,8 @@ Things this blog is for include:
 It's more for discussion starters or other things that normally happen "off the record"
 rather than, for example, an author to advertise their new paper, or plain lists of cool new papers.
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> All content on the site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. That includes both posts and comments.
+
 We encourage anyone in the community to contribute.
 If you'd like to write an article, or you're interested in helping to curate, revise, or moderate
 posts, [let us know](mailto:editors@nlpofftherecord.org)!
