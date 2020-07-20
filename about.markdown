@@ -13,17 +13,18 @@ somewhere in between. Some researchers have personal blogs, but not everyone wan
 don't provide a good place for joint-authorship pieces. This blog exists to provide such a place.
 
 Things this blog is for include:
-* Opinion or analysis pieces talking about issues of recent interest
+* Opinion or analysis pieces
 * Historical retrospectives, lessons learned from previous projects
 * Meta-discussion about the community
 * Advice for NLP research or research life
 * Anything else that will generate productive discussion
 
 It's more for discussion starters or other things that normally happen "off the record"
-rather than, for example, an author to advertise their new paper.
+rather than, for example, an author to advertise their new paper, or plain lists of cool new papers.
 
-We are open to, and encourage, anyone in the community to contribute.
-If you'd like to write an article, [let us know](mailto:editors@nlpofftherecord.org)!
+We encourage anyone in the community to contribute.
+If you'd like to write an article, or you're interested in helping to curate, revise, or moderate
+posts, [let us know](mailto:editors@nlpofftherecord.org)!
 
 Editors (alphabetical):
 * Alane Suhr
@@ -33,4 +34,5 @@ Editors (alphabetical):
 * Nanjiang Jiang
 * Nitish Gupta
 * Malihe Alikhani
+* Mohit Sudhakar
 * Sanxing Chen
