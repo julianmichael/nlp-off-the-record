@@ -4,10 +4,8 @@ title:  "Welcome to Jekyll!"
 date:   2020-07-19 18:04:14 -0700
 categories: jekyll update
 comments: true
-author:
-  - example
-  - "example"
-  - example
+authors:
+  - Julian Michael
 ---
 
 ## Instruction

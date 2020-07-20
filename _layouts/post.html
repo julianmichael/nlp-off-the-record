@@ -30,9 +30,9 @@ layout: default
                     {{ mdate | date: date_format }}
                 </time>
             {%- endif -%}
-            {%- if page.author -%}
+            {%- if page.authors -%}
                 •
-                {% for author in page.author %}
+                {% for author in page.authors %}
                     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                         {% for stored_author in site.data.authors %}
                             {%- if author == stored_author.name -%}

@@ -1,4 +1,5 @@
-- name: example
-  url: example.com
-  email: example@example.com
-  twitter: example
+- name: Julian Michael
+  url: http://julianmichael.org
+  email: julianjohnmichael@gmail.com
+  twitter: _julianmichael_
+  editor: true
