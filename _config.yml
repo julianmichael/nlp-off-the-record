@@ -31,6 +31,7 @@ twitter_username: nlpofftherecord
 theme: minima
 plugins:
   - jekyll-feed
+markdown: kramdown
 
 disqus:
   shortname: nlpofftherecord
